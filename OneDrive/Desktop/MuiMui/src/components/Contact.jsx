@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 import './Contact.css'
+import qrImg from '/QR_Mui.jpg'
 
 export default function Contact() {
   const { t } = useLang()
@@ -63,7 +64,7 @@ export default function Contact() {
                 <div className="line-qr-content">
                   <div className="channel-label">{c.lineLabel}</div>
                   <div className="channel-value">{c.lineValue}</div>
-                  <img src="/QR_Mui.jpg" alt="Line QR" className="line-qr-img" />
+                  <img src={qrImg} alt="Line QR" className="line-qr-img" />
                 </div>
               </div>
             </div>
