@@ -1,5 +1,5 @@
 .contact-section {
-  background: var(--black);
+  background: transparent;
   border-top: 1px solid var(--border);
 }
 
@@ -53,6 +53,18 @@
 }
 .wa-icon { background: rgba(37, 211, 102, 0.12); color: #25d366; }
 .ig-icon { background: rgba(228, 64, 95, 0.12); color: #e4405f; }
+.line-icon { background: rgba(0, 195, 0, 0.12); color: #00c300; }
+
+.line-qr { flex-direction: row; align-items: flex-start; cursor: default; }
+.line-qr:hover { border-color: #00c300; background: rgba(0, 195, 0, 0.03); }
+.line-qr-content { display: flex; flex-direction: column; gap: 4px; }
+.line-qr-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-top: 12px;
+  border: 1px solid var(--border);
+}
 
 .channel-label {
   font-size: 11px;

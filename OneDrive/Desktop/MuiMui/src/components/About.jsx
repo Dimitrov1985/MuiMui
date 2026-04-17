@@ -12,22 +12,7 @@ export default function About() {
           <div className="about-photo reveal">
             <div className="about-photo-inner">
               <div className="about-photo-placeholder">
-                <svg viewBox="0 0 320 420" fill="none">
-                  <rect width="320" height="420" fill="#161616" />
-                  <circle cx="160" cy="130" r="65" fill="#1e1e1e" />
-                  <ellipse cx="160" cy="360" rx="110" ry="95" fill="#1e1e1e" />
-                  <text
-                    x="160"
-                    y="410"
-                    textAnchor="middle"
-                    fill="#333"
-                    fontSize="12"
-                    fontFamily="Raleway"
-                    fontWeight="600"
-                  >
-                    YOUR PHOTO
-                  </text>
-                </svg>
+                <img src="/Mui_2.jpg" alt="Mui" style={{width:'100%',height:'100%',objectFit:'cover'}} />
               </div>
               <div className="about-experience-tag">
                 <span className="exp-num">{a.expNum}</span>

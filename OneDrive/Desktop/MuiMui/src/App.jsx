@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 function Inner() {
   useScrollReveal()
   return (
-    <>
+    <div style={{ position: 'relative', zIndex: 1 }}>
       <Navbar />
       <Hero />
       <About />
@@ -19,7 +19,7 @@ function Inner() {
       <Tools />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 
