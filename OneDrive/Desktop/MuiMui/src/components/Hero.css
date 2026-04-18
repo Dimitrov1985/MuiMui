@@ -25,7 +25,7 @@
   right: 5%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(200, 245, 66, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(229, 62, 62, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -107,7 +107,7 @@
   bottom: 24px;
   left: -20px;
   background: var(--lime);
-  color: var(--black);
+  color: #ffffff;
   padding: 14px 20px;
   display: flex;
   flex-direction: column;
@@ -177,7 +177,7 @@
   font-family: var(--font-display);
   font-size: 18px;
   letter-spacing: 3px;
-  color: var(--black);
+  color: #ffffff;
   padding-right: 40px;
 }
 

@@ -12,21 +12,21 @@
 }
 
 .navbar.scrolled {
-  background: rgba(8, 8, 8, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   padding: 16px 40px;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #dddddd;
 }
 
 .navbar-logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   letter-spacing: 3px;
-  color: #f0f0f0;
+  color: #111111;
   text-decoration: none;
 }
-.logo-accent { color: #c8f542; }
-.logo-bracket { color: #444; }
+.logo-accent { color: #e53e3e; }
+.logo-bracket { color: #aaaaaa; }
 
 .navbar-links {
   display: flex;
@@ -40,19 +40,19 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #888;
+  color: #666;
   text-decoration: none;
   transition: color 0.2s;
 }
-.navbar-links a:hover { color: #f0f0f0; }
+.navbar-links a:hover { color: #111111; }
 
 .navbar-cta {
-  background: #c8f542 !important;
-  color: #080808 !important;
+  background: #e53e3e !important;
+  color: #ffffff !important;
   padding: 10px 24px;
   font-weight: 700 !important;
 }
-.navbar-cta:hover { background: #a3cc2e !important; }
+.navbar-cta:hover { background: #c53030 !important; }
 
 /* Right group: lang toggle + burger */
 .navbar-right {
@@ -67,22 +67,22 @@
   align-items: center;
   gap: 6px;
   background: transparent;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #dddddd;
   padding: 6px 12px;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #555;
+  color: #666;
   transition: border-color 0.2s;
 }
-.lang-toggle:hover { border-color: #444; }
+.lang-toggle:hover { border-color: #aaaaaa; }
 
-.lang-active { color: #c8f542 !important; }
+.lang-active { color: #e53e3e !important; }
 
 .lang-divider {
-  color: #333;
+  color: #cccccc;
   font-weight: 300;
 }
 
@@ -99,7 +99,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: #f0f0f0;
+  background: #111111;
   transition: all 0.3s ease;
 }
 .burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -115,7 +115,7 @@
   .navbar-links {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: #080808;
+    background: #ffffff;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
@@ -123,6 +123,6 @@
     transition: transform 0.4s ease;
   }
   .navbar-links.open { transform: translateX(0); }
-  .navbar-links a { font-size: 14px; color: #f0f0f0; }
+  .navbar-links a { font-size: 14px; color: #111111; }
   .navbar-cta { padding: 14px 40px !important; }
 }

@@ -61,7 +61,7 @@
 
 .tool-card input,
 .tool-card select {
-  background: #0e0e0e;
+  background: #ffffff;
   border: 1px solid var(--border);
   color: var(--white);
   padding: 10px 12px;
@@ -107,11 +107,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  background: #0e0e0e;
+  background: #f8f8f8;
 }
 .calc-result-item.highlight {
-  background: rgba(200, 245, 66, 0.08);
-  border: 1px solid rgba(200, 245, 66, 0.2);
+  background: rgba(229, 62, 62, 0.08);
+  border: 1px solid rgba(229, 62, 62, 0.2);
 }
 
 .cr-label { font-size: 12px; color: var(--gray); }
@@ -141,7 +141,7 @@
 .wg-tab:hover {
   border-color: var(--lime);
   color: var(--lime);
-  background: rgba(200, 245, 66, 0.06);
+  background: rgba(229, 62, 62, 0.06);
 }
 
 .wg-plan {
@@ -161,7 +161,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--lime);
-  background: rgba(200, 245, 66, 0.05);
+  background: rgba(229, 62, 62, 0.05);
   border-bottom: 1px solid var(--border);
 }
 
@@ -170,7 +170,7 @@
   grid-template-columns: 20px 1fr 1fr 1fr;
   align-items: center;
   padding: 10px 12px;
-  background: #0e0e0e;
+  background: #f8f8f8;
   font-size: 12px;
   gap: 8px;
 }
@@ -191,7 +191,7 @@
   margin: 20px 0;
   text-align: center;
   padding: 24px;
-  background: #0a0a0a;
+  background: #f5f5f5;
   border: 1px solid var(--border);
 }
 

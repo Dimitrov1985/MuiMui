@@ -18,14 +18,14 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   letter-spacing: 3px;
-  color: #f0f0f0;
+  color: #111111;
 }
-.logo-accent { color: #c8f542; }
-.logo-bracket { color: #333; }
+.logo-accent { color: #e53e3e; }
+.logo-bracket { color: #aaaaaa; }
 
 .footer-copy {
   font-size: 12px;
-  color: #444;
+  color: #888888;
 }
 
 .footer-btn { padding: 10px 28px; font-size: 12px; }

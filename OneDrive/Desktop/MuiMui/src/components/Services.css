@@ -48,7 +48,7 @@
 
 .service-card--highlight {
   border-color: var(--lime);
-  background: #0f1400;
+  background: #fff5f5;
 }
 .service-card--highlight:hover {
   border-color: var(--lime);
@@ -59,7 +59,7 @@
   top: -1px;
   right: 24px;
   background: var(--lime);
-  color: var(--black);
+  color: #ffffff;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
