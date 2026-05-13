@@ -31,7 +31,7 @@
 }
 
 .service-card {
-  background: var(--card);
+  background: rgba(26, 26, 26, 0.55);
   padding: 40px 32px;
   position: relative;
   border: 1px solid var(--border);
