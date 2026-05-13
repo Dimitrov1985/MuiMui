@@ -7,6 +7,7 @@ import Services from './components/Services'
 import Tools from './components/Tools'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Preloader from './components/Preloader'
 
 function Inner() {
   useScrollReveal()
@@ -26,6 +27,7 @@ function Inner() {
 export default function App() {
   return (
     <LanguageProvider>
+      <Preloader />
       <Inner />
     </LanguageProvider>
   )

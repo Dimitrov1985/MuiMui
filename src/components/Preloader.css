@@ -1,0 +1,102 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.preloader--out {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+.pl-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.pl-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  position: relative;
+  animation: plLogoIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.pl-logo-m {
+  font-family: 'Anton', sans-serif;
+  font-size: 96px;
+  line-height: 1;
+  color: #ff6b35;
+  letter-spacing: -2px;
+}
+
+.pl-logo-ui {
+  font-family: 'Anton', sans-serif;
+  font-size: 96px;
+  line-height: 1;
+  color: #eeeef5;
+  letter-spacing: -2px;
+}
+
+.pl-logo-dot {
+  width: 12px;
+  height: 12px;
+  background: #ff6b35;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  animation: plDotPulse 1s ease-in-out 0.8s infinite alternate;
+}
+
+/* Tagline */
+.pl-tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #555;
+  animation: plFadeIn 0.6s ease 0.5s both;
+}
+
+/* Progress bar */
+.pl-bar-wrap {
+  width: 180px;
+  height: 2px;
+  background: rgba(255,255,255,0.08);
+  overflow: hidden;
+  animation: plFadeIn 0.4s ease 0.6s both;
+}
+
+.pl-bar {
+  height: 100%;
+  background: #ff6b35;
+  animation: plProgress 2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+}
+
+@keyframes plLogoIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes plFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes plDotPulse {
+  from { opacity: 0.4; transform: scale(0.8); }
+  to   { opacity: 1;   transform: scale(1.2); }
+}
+
+@keyframes plProgress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
