@@ -58,7 +58,7 @@ export default function Hero() {
         <div className="hero-photo reveal reveal-delay-2">
           <div className="photo-frame">
             <div className="photo-placeholder">
-              <img src="/Mui.jpg" alt="Mui" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'inherit'}} />
+              <img src="/MuiNew.jpg" alt="Mui" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'inherit'}} />
             </div>
             <div className="photo-badge">
               <span className="badge-num">{h.badgeNum}</span>
