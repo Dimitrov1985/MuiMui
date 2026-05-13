@@ -32,7 +32,7 @@
   padding: 0 40px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 400px;
   gap: 60px;
   align-items: center;
 }
