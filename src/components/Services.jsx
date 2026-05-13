@@ -37,7 +37,7 @@ export default function Services() {
                 {card.features.map((f, j) => (
                   <li key={j}>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M2 7l4 4 6-6" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round"/>
+                      <path d="M2 7l4 4 6-6" stroke="#d93b3b" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
                     {f}
                   </li>
