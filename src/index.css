@@ -7,11 +7,11 @@
 }
 
 :root {
-  --bg:        #0b2614;
-  --dark:      #0f3019;
-  --card:      #143d20;
-  --card2:     #184826;
-  --border:    #234f2e;
+  --bg:        #0a0a0a;
+  --dark:      #111111;
+  --card:      #1a1a1a;
+  --card2:     #202020;
+  --border:    #2a2a2a;
   --orange:    #ff6b35;
   --orange-dim:#e5501a;
   --gold:      #ffd166;
@@ -31,7 +31,7 @@ html { scroll-behavior: smooth; }
 
 body {
   background:
-    linear-gradient(135deg, rgba(8, 28, 14, 0.82) 0%, rgba(18, 50, 26, 0.78) 100%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.60) 100%),
     url('/bg.jpg') center / cover fixed no-repeat;
   color: var(--text);
   font-family: var(--font-body);
