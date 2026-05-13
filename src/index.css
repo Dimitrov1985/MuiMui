@@ -16,7 +16,7 @@
   --orange-dim:#e5501a;
   --gold:      #ffd166;
   --text:      #eeeef5;
-  --muted:     #7777a0;
+  --muted:     #b0b0c8;
   --font-display: 'Anton', sans-serif;
   --font-sub:     'Barlow Condensed', sans-serif;
   --font-body:    'Barlow', sans-serif;
@@ -30,13 +30,20 @@ html { scroll-behavior: smooth; }
 }
 
 body {
-  background:
-    linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.60) 100%),
-    url('/bg.jpg') center / cover fixed no-repeat;
+  background: #0a0a0a;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('/bg.jpg') center / cover no-repeat;
+  filter: grayscale(90%) brightness(0.35);
+  z-index: -1;
 }
 
 body::after {
