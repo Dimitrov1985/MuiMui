@@ -30,8 +30,9 @@ html { scroll-behavior: smooth; }
 }
 
 body {
-  background: linear-gradient(135deg, #0a2412 0%, #163d22 50%, #1b4a2a 100%);
-  background-attachment: fixed;
+  background:
+    linear-gradient(135deg, rgba(8, 28, 14, 0.82) 0%, rgba(18, 50, 26, 0.78) 100%),
+    url('/bg.jpg') center / cover fixed no-repeat;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
