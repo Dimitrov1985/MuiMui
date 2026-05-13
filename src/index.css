@@ -42,7 +42,7 @@ body::before {
   position: fixed;
   inset: 0;
   background: url('/bg.jpg') center / cover no-repeat;
-  filter: grayscale(90%) brightness(0.35);
+  filter: grayscale(90%) brightness(0.2);
   z-index: -1;
 }
 
