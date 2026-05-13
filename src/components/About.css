@@ -1,0 +1,113 @@
+.about-section {
+  background: transparent;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-photo-inner {
+  position: relative;
+  max-width: 380px;
+}
+
+.about-photo-placeholder {
+  border: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+}
+.about-photo-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(255, 107, 53, 0.12) 100%);
+  pointer-events: none;
+}
+.about-photo-placeholder svg { width: 100%; display: block; }
+
+.about-experience-tag {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--orange);
+  color: #fff;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+.exp-num {
+  font-family: 'Anton', sans-serif;
+  font-size: 52px;
+  line-height: 1;
+}
+.exp-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* Content side */
+.outline-text {
+  -webkit-text-stroke: 2px var(--text);
+  color: transparent;
+}
+
+.about-tagline {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--muted);
+  border-left: 3px solid var(--orange);
+  padding-left: 20px;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+.about-tagline strong { color: var(--orange); font-style: normal; }
+
+.about-desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.about-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.about-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.list-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--orange);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .about-photo-inner { max-width: 300px; margin: 0 auto; }
+  .about-experience-tag { right: 0; bottom: -16px; }
+}
