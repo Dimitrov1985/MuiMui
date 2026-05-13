@@ -4,8 +4,8 @@
 }
 
 .outline-text-tools {
-  -webkit-text-stroke: 0;
-  color: #ffffff;
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
 }
 
 .tools-intro {
